@@ -2,8 +2,7 @@ import React from 'react';
 import {Movie} from '../models';
 import {MovieRepository} from '../api';
 import { Link } from 'react-router-dom';
-import { transitions, positions, Provider as AlertProvider } from 'react-alert';
-import AlertTemplate from 'react-alert-template-basic';
+
 import './pages.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,22 +35,9 @@ export class MovieDetails extends React.Component {
     }
 
     render(){
-        if (!this.state.movie) {
-            return <div>Loading....</div>
-        }
+       
         return<>
-          <head>
-                <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
-          </head>
-          <div className="top">
-            <div className="row">
-                <div className="col">
-                    <h1 className="display-1">
-                        <Link to="/home" className="site-title">Movie Manager</Link>
-                    </h1>
-                </div>
-            </div>
-        </div>   
+         
         <div className="maroon"></div>
         <div className="red"></div>
         <div className="orange"></div>

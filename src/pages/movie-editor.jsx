@@ -33,18 +33,7 @@ export class MovieEditor extends React.Component {
 
     render(){
         return<>
-          <head>
-            <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
-          </head>
-          <div className="top">
-            <div className="row">
-                <div className="col">
-                    <h1 className="display-1">
-                        <Link to="/home" className="site-title">Movie Manager</Link>
-                    </h1>
-                </div>
-            </div>
-        </div>    
+      
         <div className="maroon"></div>
         <div className="red"></div>
         <div className="orange"></div>
@@ -125,8 +114,8 @@ export class MovieEditor extends React.Component {
                                     name="newMovieRUntime"
                                     className="form-control" 
                                     placeholder= "runtime"
-                                    value={this.state.movie.runTime}
-                                    onChange={e =>this.setState({movie:{...this.state.movie, runTime:e.target.value}})}
+                                    value={this.state.movie.runtime}
+                                    onChange={e =>this.setState({movie:{...this.state.movie, runtime:e.target.value}})}
                                     />    
                                 </div>         
                             </div>
