@@ -42,6 +42,9 @@ export class MovieAdder extends React.Component {
 
     render(){
         return<>
+          <head>
+                <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
+          </head>
           <div className="top">
             <div className="row">
                 <div className="col">
@@ -50,7 +53,11 @@ export class MovieAdder extends React.Component {
                     </h1>
                 </div>
             </div>
-        </div>              
+        </div> 
+        <div className="maroon"></div>
+        <div className="red"></div>
+        <div className="orange"></div>
+        <div className="yellow"></div>               
         <div className="row movie-details">
             <div className="card movie-card">
                 <div className="card-body movie-card">

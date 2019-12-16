@@ -4,6 +4,7 @@ import {withRouter, Redirect} from 'react-router-dom';
 import {MovieDetails} from "./movie-details";
 import {MovieRepository} from "../api";
 import {Movie} from "../models";
+import retro_death_vector from './retro_death_vector.svg';
 import './pages.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +34,10 @@ export class HomePage extends React.Component {
 
     render(){
         return <>
+             <head>
+                <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
+            </head>
+           
             <div className="top">
                 <div className="row">
                     <div className="col">
@@ -82,8 +87,8 @@ export class HomePage extends React.Component {
                 </div>  
             </div>   
             
-            <div className="image">
-                 <img  className="banner" src="https://fsmedia.imgix.net/d2/6c/c5/1d/7991/47e2/b0be/74ccd76d8ad9/star-wars-rise-of-skywalker-leaks-theories-spoilers.jpeg" alt="rise of skywalker logo"/>
+            <div className="banner">
+                 <img  className="image" src={retro_death_vector} alt="retro death star logo"/>
             </div>
         
     </>

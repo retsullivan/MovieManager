@@ -27,6 +27,9 @@ export class MovieList extends React.Component {
 
     render(){
         return <>
+        <head>
+                <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
+        </head>
         <div className="top">
             <div className="row">
                 <div className="col">
@@ -36,38 +39,42 @@ export class MovieList extends React.Component {
                 </div>
             </div>
         </div>
+        <div className="maroon"></div>
+        <div className="red"></div>
+        <div className="orange"></div>
+        <div className="yellow"></div>  
         <div className="row">
-            <div className="card-body">
-                <table className="table">
-                    <thead className="list-table">
-                        <tr>
-                            <th>Title</th>
-                            <th>Year</th>
-                            <th>
-                                <Link to={'/new'} className="btn btn-info btn-block">
-                                        Add Movie
-                                </Link>  
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>                   
-                        {
-                            this.state.movies &&  //makes sure that there are movies
-                            this.state.movies.map(movie=>
-                            <tr key={movie.movieId}>
-                                <td>{movie.title}</td>
-                                <td>{movie.releaseYear}</td>
-                                <td> 
-                                    <Link to={'/movies/'+ movie.id} className="btn btn-outline-info btn-block">
-                                            Manage 
+                <div className="card-body">
+                    <table className="table">
+                        <thead className="list-table">
+                            <tr>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>
+                                    <Link to={'/new'} className="btn btn-info btn-block">
+                                            Add Movie
                                     </Link>  
-                                </td>
+                                </th>
                             </tr>
-                       
-                        )}
-                     </tbody>
-                </table>
-            </div>
+                        </thead>
+                        <tbody>                   
+                            {
+                                this.state.movies &&  //makes sure that there are movies
+                                this.state.movies.map(movie=>
+                                <tr key={movie.movieId}>
+                                    <td>{movie.title}</td>
+                                    <td>{movie.releaseYear}</td>
+                                    <td> 
+                                        <Link to={'/movies/'+ movie.id} className="btn btn-outline-info btn-block">
+                                                Manage 
+                                        </Link>  
+                                    </td>
+                                </tr>
+                        
+                            )}
+                        </tbody>
+                    </table>
+                </div>
         </div>
     </>
     }

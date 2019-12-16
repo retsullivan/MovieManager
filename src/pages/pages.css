@@ -22,25 +22,34 @@
     margin:0px;
     align-items:center;
     justify-content: center;
-    padding:15px;
+    padding:3% 5%;
     box-shadow:0 1px 1px rgba(0,0,0,.5);
 }
 
 .site-title{
-    font:90%;
-    color:white;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    color:#FFCF13;
+    font-family: restore, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-left:2%;
 }
 .site-title:hover{
-    color:rgb(193, 215, 248); 
+   
+    color:rgb(247, 220, 115);
     text-decoration: none;
 }
 
 .search-bar{
     width: 100%;
     margin:0px;
-    padding-left:2%;
-    padding-bottom:2%;
-    justify-content: space-evenly;
+    padding-left:10%;
+    padding-right:8%;
+    justify-content: space-between;
     align-items: center;
     background-color:rgb(39, 36, 47);
     /* box-shadow:0 1px 1px rgba(0,0,0,.5); */
@@ -63,13 +72,24 @@
 
 .row{
     width:100%;
+    height:100%;
     margin:0px;
 }
 
 .banner{
-    width:100%;
-    height:auto;
+    display:flex;
+    justify-content: center; 
+    height:100vh;       
+    padding:5%;
+    background-color:rgb(39, 36, 47);
 
+}
+
+.image{
+    display:flex;
+    position:relative;
+    width:auto;
+    height:40vh;
 }
 
 ul{
@@ -112,11 +132,7 @@ ul{
     
 }
 
-.row.movie-details{
-    display:flex;
-    position: absolute;
-    width:100%
-}
+
 .card.movie-card{
     display:flex;
     position:relative;
@@ -128,21 +144,18 @@ ul{
 }
 
 .card-body.movie-card{
-    padding: 3%;
     width:100%
     
 }
 
-
-
-
-
 .row.movie-details{
     display:flex;
+    width:100%;
     flex-direction:column;
     align-content: center;
     justify-content: space-around;
-    padding:3%;
+    padding-top:2%
+   
 }
 
 .edit-menu{
@@ -171,5 +184,31 @@ ul{
     background-color:#F5F5F5;
     transition: .5s ease-in-out;
     
+}
+
+
+
+.maroon{
+    height:15px;
+    width:100%;
+    background-color:#9a1820;
+}
+
+.red{
+    height:15px;
+    width:100%;
+    background-color:#e62528;
+}
+
+.orange{
+    height:15px;
+    width:100%;
+    background-color:#f89d28;
+}
+
+.yellow{
+    height:15px;
+    width:100%;
+    background-color:#FFCF13;
 }
 

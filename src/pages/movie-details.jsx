@@ -40,6 +40,9 @@ export class MovieDetails extends React.Component {
             return <div>Loading....</div>
         }
         return<>
+          <head>
+                <link rel="stylesheet" href="https://use.typekit.net/uff0mpp.css"/>
+          </head>
           <div className="top">
             <div className="row">
                 <div className="col">
@@ -48,9 +51,12 @@ export class MovieDetails extends React.Component {
                     </h1>
                 </div>
             </div>
-        </div>              
+        </div>   
+        <div className="maroon"></div>
+        <div className="red"></div>
+        <div className="orange"></div>
+        <div className="yellow"></div>           
         <div className="row movie-details">
-        
             <div className="row card movie-card">
                 <div className="card-title">
                     <h3 className="display-3">Movie Details</h3>
